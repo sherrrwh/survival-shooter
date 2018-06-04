@@ -352,6 +352,85 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289302131}
+--- !u!1 &511035186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 511035188}
+  - component: {fileID: 511035187}
+  - component: {fileID: 511035190}
+  - component: {fileID: 511035189}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &511035187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511035186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1059363519}
+  enemy: {fileID: 1258477391405260, guid: f6dcb9e228fc3fd4ab6e59bf5a368e6d, type: 2}
+  spawnTime: 3
+  spawnPoints:
+  - {fileID: 0}
+--- !u!4 &511035188
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511035186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &511035189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511035186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1059363519}
+  enemy: {fileID: 1214195133559462, guid: 486089d8c1bca3f44a0f204fb5ba06ba, type: 2}
+  spawnTime: 10
+  spawnPoints:
+  - {fileID: 0}
+--- !u!114 &511035190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511035186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1059363519}
+  enemy: {fileID: 1609614497183616, guid: 22c1be64ce74bf244b0965ededc28931, type: 2}
+  spawnTime: 3
+  spawnPoints:
+  - {fileID: 0}
 --- !u!1 &658349430
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +739,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc4af89cc1ef964ba40e165ebaea17f, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1059363519 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114689932249075068, guid: 8bc4af89cc1ef964ba40e165ebaea17f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1059363517}
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
 --- !u!4 &1059363524 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4292590635028436, guid: 8bc4af89cc1ef964ba40e165ebaea17f,
