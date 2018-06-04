@@ -459,6 +459,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 126720, guid: ad67cddd729fb4342be2063a3f5ad7cc, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad67cddd729fb4342be2063a3f5ad7cc, type: 2}
   m_IsPrefabParent: 0
@@ -688,32 +692,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114689932249075068, guid: 8bc4af89cc1ef964ba40e165ebaea17f,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1163033118}
+    - target: {fileID: 114689932249075068, guid: 8bc4af89cc1ef964ba40e165ebaea17f,
+        type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 289302133}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc4af89cc1ef964ba40e165ebaea17f, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1059363518 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1338521397977676, guid: 8bc4af89cc1ef964ba40e165ebaea17f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1059363517}
---- !u!114 &1059363519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1059363518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 1163033118}
-  damageImage: {fileID: 289302133}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!4 &1059363524 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4292590635028436, guid: 8bc4af89cc1ef964ba40e165ebaea17f,
@@ -1243,6 +1234,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
+--- !u!114 &1763794826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1763794817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
 --- !u!1 &1897435134
 GameObject:
   m_ObjectHideFlags: 0
