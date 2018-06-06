@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "survival-shooter",
+"dataUrl": "survival-shooter.data.unityweb",
+"asmCodeUrl": "survival-shooter.asm.code.unityweb",
+"asmMemoryUrl": "survival-shooter.asm.memory.unityweb",
+"asmFrameworkUrl": "survival-shooter.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
