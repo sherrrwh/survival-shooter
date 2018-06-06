@@ -21,7 +21,7 @@ public class PauseManager : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			canvas.enabled = !canvas.enabled;
 			Pause ();
-		}		
+		}
 	}
 
 	public void Pause () {
@@ -36,6 +36,11 @@ public class PauseManager : MonoBehaviour {
 		else {
 			unpaused.TransitionTo (0.01f);
 		}
+	}
+	public void Resume () {
+		canvas.enabled = false;
+		Time.timeScale = 1;
+		unpaused.TransitionTo (0.01f);
 	}
 	public void Quit () {
 #if UNITY_EDITOR

@@ -14,4 +14,8 @@ public class MixLevels : MonoBehaviour {
 	public void SetMusicLvl (float musicLvl) {
 		masterMixer.SetFloat ("musicVol", musicLvl);
 	}
+	
+	public void OnSoundOnChange (bool isSoundOn) {
+		masterMixer.SetFloat("masterVol", isSoundOn ? 0 : -80);
+	}
 }
